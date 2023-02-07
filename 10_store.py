@@ -51,15 +51,23 @@ print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, '�
 
 # TODO здесь ваш код
 
-##########################################################################################
-# ВНИМАНИЕ! После того как __ВСЯ__ домашняя работа сделана и запушена на сервер,         #
-# нужно зайти в ЛМС (LMS - Learning Management System ) по адресу http://go.skillbox.ru  #
-# и оформить попытку сдачи ДЗ! Без этого ДЗ не будет проверяться!                        #
-# Как оформить попытку сдачи смотрите видео - https://youtu.be/qVpN0L-C3LU               #
-##########################################################################################
+tables_quantity = store[goods['Стол']][0]['quantity'] + store[goods['Стол']][1]['quantity']
+tables_cost = store[goods['Стол']][0]['quantity'] * store[goods['Стол']][0]['price'] + \
+              store[goods['Стол']][1]['quantity'] * store[goods['Стол']][1]['price']
+
+print(f"Стол - {tables_quantity} шт, стоимость {tables_cost} руб")
 
 
+sofa_quantity = store[goods['Диван']][0]['quantity'] + store[goods['Диван']][1]['quantity']
+sofa_cost = store[goods['Диван']][0]['quantity'] * store[goods['Диван']][0]['price'] + \
+              store[goods['Диван']][1]['quantity'] * store[goods['Диван']][1]['price']
+
+print(f"Диван - {sofa_quantity} шт, стоимость {sofa_cost} руб")
 
 
+chair_quantity = store[goods['Стул']][0]['quantity'] + store[goods['Стул']][1]['quantity']
+chair_cost = store[goods['Стул']][0]['quantity'] * store[goods['Стул']][0]['price'] + \
+              store[goods['Стул']][1]['quantity'] * store[goods['Стул']][1]['price'] + \
+              store[goods['Стул']][2]['quantity'] * store[goods['Стул']][2]['price']
 
-
+print(f"Стул - {chair_quantity} шт, стоимость {chair_cost} руб")

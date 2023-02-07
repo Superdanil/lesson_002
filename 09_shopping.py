@@ -46,9 +46,10 @@ def raschet():
         {'shop': 'ашан', 'price': shops['ашан'][0]['price']},
         {'shop': 'пятерочка', 'price': shops['пятерочка'][0]['price']},
         {'shop': 'магнит', 'price': shops['магнит'][0]['price']}
-        ]
+       ]
 
-    pprint(cookies)
+    #pprint(cookies)
+
 
 # составляем список стоимости печенья в магазинах
     cookies1 = []
@@ -57,7 +58,7 @@ def raschet():
         cookies1.append(cookies[i]['price'])
         i += 1
 
-    print(cookies1)
+    #print(cookies1)
 
 # оставляем i самых низких цен
     cookies2 = []
@@ -66,7 +67,7 @@ def raschet():
         cookies2.append(min(cookies1))
         cookies1.remove(min(cookies1))
 
-    print(cookies2)
+    #print(cookies2)
 
 # составляем список i самых дешевых магазинов
     cookies3 = []
@@ -76,9 +77,9 @@ def raschet():
             if cookies2[n] == cookies[i]['price']:
                 cookies3.append(cookies[i])
 
-    print(cookies3)
+    #print(cookies3)
 
-    return (cookies3)
+    return(cookies3)
 
 #словарь цен на продукты
 
