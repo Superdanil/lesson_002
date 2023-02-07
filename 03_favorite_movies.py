@@ -18,7 +18,7 @@ my_favorite_movies = 'Терминатор, Пятый элемент, Ават�
 
 
 print(my_favorite_movies[0:10])
-print(my_favorite_movies[-15:-1] + my_favorite_movies[-1])  # ммм, хуета
+print(my_favorite_movies[42:])
 print(my_favorite_movies[12:25])
 print(my_favorite_movies[35:40])
 
